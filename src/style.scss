@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap');
 
 body {
   background-image: url('./assets/airbnb-main.jpg');
@@ -71,15 +71,22 @@ body {
 }
 
 .guest-options {
-  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 372px;
+  padding: 32px;
+  padding-bottom: 24px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
 }
 
 [placeholder] {
-  width: 100%;
+  width: 95%;
   height: 40px;
   font-size: 20px;
   font-weight: 400;
   color: grey;
+  font-family: 'Raleway', sans-serif;
 }
 
 .check-in, .check-out {
@@ -97,27 +104,67 @@ label {
 }
 
 input {
+  margin-bottom: 10px;
   padding-left: 12px;
+}
+
+input, button.guests {
+  margin-top: 10px;
 }
 
 button.guests {
   display: block;
-  width: 100%;
-  height: 40px;
+  width: 98.5%;
+  height: 46px;
   background-color: transparent;
   font-size: 20px;
   color: grey;
   text-align: left;
   padding-left: 12px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .arrow {
   display: inline-block;
   position: sticky;
-  left: 40rem;
+  left: 32rem;
 }
 
 .arrow img {
   width: 12px;
   height: 12px;
+  transform: rotateX(180deg);
+}
+
+button.search {
+  float: right;
+  height: 48px;
+  width: 100px;
+  border-radius: 7px;
+  border: none;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 2.5rem;
+}
+
+.guest-headers, .inftants, .children, .guest-count, .increment, .count, .decrement {
+  display: inline-block;
+}
+
+.guest-count, .apply {
+  float: right;
+}
+
+.decrement img, .increment img {
+  width: 10px;
+  height: 10px;
+  border: .5px solid rgb(0, 132, 137);
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.guest-option-box p {
+  margin: 20px;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import arrow from './../assets/arrow.png';
+import DropdownBox from './DropdownBox';
 
 function Bookingbox() {
   return (
@@ -23,8 +24,9 @@ function Bookingbox() {
           <img className="container__image" alt="arrow logo" src={arrow} />
         </div></button>
         <div className="guest-options">
+          <DropdownBox />
         </div>
-        <button type="submit">Search</button>
+        <button className="search" type="submit">Search</button>
       </form>
       </div>
     </div>
