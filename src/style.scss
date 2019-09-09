@@ -152,7 +152,7 @@ button.guests {
   transform: rotateX(180deg);
 }
 
-button.search {
+button.search, button.form-btn {
   float: right;
   height: 48px;
   width: 100px;
@@ -164,6 +164,15 @@ button.search {
   font-weight: 800;
   margin-top: 2.5rem;
 }
+
+button.form-btn {
+  float: none;
+}
+
+.center {
+  text-align: center;
+}
+
 
 .guest-headers, .inftants, .children, .guest-count, .increment, .count, .decrement {
   display: inline-block;
@@ -245,4 +254,19 @@ button.search {
 
 .hidden {
   display: none;
+}
+
+.home-form {
+  margin-top: 10%;
+}
+
+.newhomes {
+  background-image: url('./assets/new_home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 80rem;
+  font-family: 'Raleway', sans-serif;
+  width: 100vw;
+  position: relative;
 }

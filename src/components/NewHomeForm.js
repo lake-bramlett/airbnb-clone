@@ -35,35 +35,39 @@ export default class NewHomeForm extends Component {
     }
 
     return (
-      <div className="home-form">
-        <form onSubmit={this.handleNewHomeFormSubmission}>
-        <input
-          type='text'
-          id='type'
-          placeholder='type'
-          ref={(input) => {_type= input;}}/>
-        <input
-          type='text'
-          id='location'
-          placeholder='location'
-          ref={(input) => {_location = input;}}/>
-        <input
-          type='text'
-          id='name'
-          placeholder='name'
-          ref={(input) => {_name = input;}}/>
-        <input
-          type='text'
-          id='rate'
-          placeholder='rate'
-          ref={(input) => {_rate= input;}}/>
-        <input
-          type='text'
-          id='rating'
-          placeholder='rating'
-          ref={(input) => {_rating = input;}}/>
-        <button type='submit'>Submit</button>
-        </form>
+      <div className="newhomes">
+        <div className="bookingbox home-form">
+          <form onSubmit={this.handleNewHomeFormSubmission}>
+            <input
+            type='text'
+            id='type'
+            placeholder='type'
+            ref={(input) => {_type= input;}}/>
+            <input
+            type='text'
+            id='location'
+            placeholder='location'
+            ref={(input) => {_location = input;}}/>
+            <input
+            type='text'
+            id='name'
+            placeholder='name'
+            ref={(input) => {_name = input;}}/>
+            <input
+            type='text'
+            id='rate'
+            placeholder='rate'
+            ref={(input) => {_rate= input;}}/>
+            <input
+            type='text'
+            id='rating'
+            placeholder='rating'
+            ref={(input) => {_rating = input;}}/>
+            <div className="center">
+            <button className="form-btn" type='submit'>Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     )
   }
