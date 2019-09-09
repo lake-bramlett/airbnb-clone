@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800&display=swap');
 
 body {
+  margin: 0px;
+  margin-top: -1rem;
+}
+
+.splash-body {
   background-image: url('./assets/airbnb-main.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-position: bottom;
+  height: 80rem;
   font-family: 'Raleway', sans-serif;
+  width: 100vw;
+  position: relative;
 }
 
 .container {
@@ -21,6 +29,10 @@ body {
 
 .left {
     text-align: left;
+}
+
+.nav-bar, .logo img {
+  z-index: 2;
 }
 
 .logo img {
@@ -41,6 +53,10 @@ body {
   padding: 10px 10px 30px 10px;
   font-size: 14px;
   font-weight: 600;
+}
+
+.splash-container {
+  position: absolute;
 }
 
 .nav-bar li a {
@@ -167,4 +183,66 @@ button.search {
 
 .guest-option-box p {
   margin: 20px;
+}
+
+.homes-list ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.home-card {
+  max-width: 383px;
+  padding: .5rem;
+}
+
+.home-card-image {
+  width: 100%;
+  max-height: 255px;
+}
+
+.home-card-image img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+
+.home-sub-card .home-info {
+  font-size: .8rem;
+  color: #767676;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: .5rem 0rem;
+}
+
+.home-sub-card .home-info .bullet {
+  margin: 0px 2px;
+}
+
+.home-sub-card .home-name {
+  font-size: 18px;
+  color: #484848;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.home-sub-card .home-rate {
+  font-size: 14px;
+  font-weight: 400;
+  color: #484848;
+  margin: 4px 0px;
+}
+
+.home-sub-card .rating-star {
+  width: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.home-sub-card .rating-star img {
+  width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
 }

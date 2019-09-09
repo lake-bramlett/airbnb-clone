@@ -3,7 +3,16 @@ import { Link } from 'react-router-dom';
 import arrow from './../assets/arrow.png';
 import DropdownBox from './DropdownBox';
 
+function toggleDiv (e) {
+  e.preventDefault()
+  const oldClassName = document.getElementById('test').className;
+  const newClassName = oldClassName === 'guest-options hidden' ? 'guest-options' : 'guest-options hidden'
+  document.getElementById('test').className = newClassName
+}
+
 function Bookingbox() {
+
+
   return (
     <div>
       <div className="bookingbox">
@@ -20,10 +29,10 @@ function Bookingbox() {
           <input type="date" placeholder="mm/dd/yyyy"></input>
         </div>
         <label>Guests</label><br />
-        <button className="guests">Guests <div className="arrow">
+        <button className="guests" onClick={toggleDiv}>Guests <div className="arrow">
           <img className="container__image" alt="arrow logo" src={arrow} />
         </div></button>
-        <div className="guest-options">
+        <div id="test" className="guest-options hidden">
           <DropdownBox />
         </div>
         <button className="search" type="submit">Search</button>
