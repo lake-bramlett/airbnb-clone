@@ -6,7 +6,9 @@ function Nav() {
   return (
     <div className="container">
       <div className="logo">
-        <img className="container__image" alt="airbnb logo" src={airBnBLogo} />
+        <Link to="/">
+          <img className="container__image" alt="airbnb logo" src={airBnBLogo} />
+        </Link>
       </div>
       <ul className="nav-bar">
         <li><Link to="/newhomes">Host a home</Link></li>
